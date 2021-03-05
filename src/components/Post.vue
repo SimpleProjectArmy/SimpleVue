@@ -9,25 +9,21 @@
 
 <script>
 export default {
-  name: "Post",
-  data() {
+  name: 'Post',
+  data: () => {
     return {
-      msg: "Post Post Post",
-      todos: [
-        { text: "Learn JavaScript" },
-        { text: "Learn Vue" },
-        { text: "Build something awesome" }
-      ],
-      message: "Hello Vue.js!"
-    };
+      msg: 'Post Post Post',
+      todos: [{text: 'Learn JavaScript'}, {text: 'Learn Vue'}, {text: 'Build something awesome'}],
+      message: 'Hello Vue.js!'
+    }
   },
   methods: {
-    reverseMessage: function() {
+    reverseMessage: () => {
       this.message = this.message
-        .split("")
+        .split('')
         .reverse()
-        .join("");
+        .join('')
     }
   }
-};
+}
 </script>
