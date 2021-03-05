@@ -34,7 +34,7 @@
 
 <script>
 export default {
-  name: 'Forms',
+  name: 'TodoList',
   data: () => {
     return {
       newTask: '',

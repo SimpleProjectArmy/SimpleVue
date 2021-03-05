@@ -2,7 +2,8 @@ import Vue from 'vue'
 import Router from 'vue-router'
 import HelloWorld from '@/components/HelloWorld'
 import Post from '@/components/Post'
-import Forms from '@/components/Forms'
+import TodoList from '@/components/TodoList'
+import Form from '@/components/Form'
 Vue.use(Router)
 
 export default new Router({
@@ -18,9 +19,14 @@ export default new Router({
       component: Post
     },
     {
+      path: '/todolist',
+      name: 'todolist',
+      component: TodoList
+    },
+    {
       path: '/form',
       name: 'form',
-      component: Forms
+      component: Form
     }
   ]
 })
