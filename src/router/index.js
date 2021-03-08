@@ -4,6 +4,7 @@ import HelloWorld from '@/components/HelloWorld'
 import Post from '@/components/Post'
 import TodoList from '@/components/TodoList'
 import Form from '@/components/Form'
+import VuexPlay from '@/components/VuexPlay'
 Vue.use(Router)
 
 export default new Router({
@@ -27,6 +28,11 @@ export default new Router({
       path: '/form',
       name: 'form',
       component: Form
+    },
+    {
+      path: '/vuexplay',
+      name: 'vuexplay',
+      component: VuexPlay
     }
   ]
 })

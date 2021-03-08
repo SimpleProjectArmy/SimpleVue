@@ -7,13 +7,13 @@
 </template>
 
 <script>
-import Display from './vuex/Display'
-import Increment from './vuex/Increment'
+import Display from './vnex/Display'
+import Increment from './vnex/Increment'
 export default {
   name: 'VuexPlay',
   components: {
-    Display: Display,
-    Increment: Increment
+    Display,
+    Increment
   }
 }
 </script>
