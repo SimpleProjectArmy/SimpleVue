@@ -1,7 +1,7 @@
 <template>
   <ul>
     <li v-for="product in products" :key="product.id">
-      {{ product.title }} - {{ product.price | currency }}
+      {{ product.title }} - {{ product.price | currency('us', 2) }}
       <br />
       <button :disabled="!product.inventory" @click="addProductToCart(product)">
         Add to cart
