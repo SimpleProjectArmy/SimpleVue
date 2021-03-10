@@ -1,19 +1,18 @@
 <template>
-  <div>
-    TEST
-    <Display></Display>
-    <Increment></Increment>
+  <div id="app">
+    <h1>Shopping Cart Example</h1>
+    <hr />
+    <h2>Products</h2>
+    <ProductList />
+    <hr />
+    <ShoppingCart />
   </div>
 </template>
 
 <script>
-import Display from './vnex/Display'
-import Increment from './vnex/Increment'
+import ProductList from './ProductList.vue'
+import ShoppingCart from './ShoppingCart.vue'
 export default {
-  name: 'VuexPlay',
-  components: {
-    Display,
-    Increment
-  }
+  components: {ProductList, ShoppingCart}
 }
 </script>
