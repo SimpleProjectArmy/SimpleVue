@@ -1,9 +1,14 @@
 <template>
   <div>
-    <button>Increment +1</button>
+    <button @click="increment">Increment +1</button>
   </div>
 </template>
 
 <script>
-export default {}
+import {mapActions} from 'vuex'
+export default {
+  methods: {
+    ...mapActions(['increment'])
+  }
+}
 </script>

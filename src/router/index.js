@@ -5,6 +5,7 @@ import Post from '@/components/Post'
 import TodoList from '@/components/TodoList'
 import Form from '@/components/Form'
 import VuexPlay from '@/components/VuexPlay'
+import Counting from '@/components/Counting'
 Vue.use(Router)
 
 export default new Router({
@@ -33,6 +34,11 @@ export default new Router({
       path: '/vuexplay',
       name: 'vuexplay',
       component: VuexPlay
+    },
+    {
+      path: '/counting',
+      name: 'counting',
+      component: Counting
     }
   ]
 })
