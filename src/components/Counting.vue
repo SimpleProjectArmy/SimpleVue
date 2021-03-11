@@ -1,18 +1,14 @@
 <template>
-  <div>
-    <Display></Display>
-    <Increment></Increment>
+  <div id="app">
+    Clicked: {{ getLast }} times, count is {{ evenOrOdd }}.
+    <button @click="increment">+</button>
   </div>
 </template>
 
 <script>
-import Display from './Display.vue'
-import Increment from './Increment.vue'
-
+import {mapGetters, mapActions} from 'vuex'
 export default {
-  components: {
-    Display: Display,
-    Increment: Increment
-  }
+  computed: mapGetters(['evenOrOdd', 'getLast']),
+  methods: mapActions(['increment'])
 }
 </script>
