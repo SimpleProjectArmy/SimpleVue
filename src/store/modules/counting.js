@@ -11,12 +11,16 @@ const mutations = {
   },
   reset(state) {
     state.count = 0
+  },
+  incrementByMe(state, payload) {
+    state.count += payload
   }
 }
 
 const actions = {
   increment: ({commit}) => commit('increment'),
-  decrement: ({commit}) => commit('decrement')
+  decrement: ({commit}) => commit('decrement'),
+  incrementByMe: ({commit}) => commit('decrement')
 }
 
 const getters = {
