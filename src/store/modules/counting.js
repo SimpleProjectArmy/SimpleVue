@@ -8,6 +8,9 @@ const mutations = {
   },
   decrement(state) {
     state.count--
+  },
+  reset(state) {
+    state.count = 0
   }
 }
 
@@ -22,6 +25,7 @@ const getters = {
 }
 
 export default {
+  // namespaced: true,
   state,
   getters,
   actions,
