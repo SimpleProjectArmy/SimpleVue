@@ -12,7 +12,7 @@ const mutations = {
   reset(state) {
     state.count = 0
   },
-  incrementByMe(state, payload) {
+  incrementByTwo(state, payload) {
     state.count += payload
   }
 }
@@ -20,7 +20,11 @@ const mutations = {
 const actions = {
   increment: ({commit}) => commit('increment'),
   decrement: ({commit}) => commit('decrement'),
-  incrementByMe: ({commit}) => commit('decrement')
+  incrementByTwo: (context, value) => {
+    console.log(`committtt`, context)
+    // getters: {…}, state: {…}, rootGetters: {…}, dispatch: ƒ, commit: ƒ
+    context.commit('incrementByTwo', value)
+  }
 }
 
 const getters = {
