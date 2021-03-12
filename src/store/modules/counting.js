@@ -19,7 +19,7 @@ const mutations = {
     state.count -= 22
   },
   mutipleValue(state, payload) {
-    state.count *= 7
+    state.count *= payload
   }
 }
 
@@ -31,7 +31,7 @@ const actions = {
     context.commit('incrementByTwo', value)
   },
   autoDecrement: ({commit}) => commit('autoDecrement'),
-  mutipleValue: ({commit}) => commit('mutipleValue')
+  mutipleValue: ({commit}, payload) => commit('mutipleValue')
 }
 
 const getters = {
