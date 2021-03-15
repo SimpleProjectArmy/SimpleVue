@@ -6,7 +6,7 @@
     <button @click="reset">reset</button>
     <button @click="incrementByTwo(parseInt(value))">incrementByTwo</button>
     <input type="number" v-model="mutiple" />
-    <button @click="mutipleValue">mutipleValue</button>
+    <button @click="mutipleValue(parseInt(mutiple))">mutipleValue</button>
   </div>
 </template>
 
@@ -28,8 +28,8 @@ export default {
     ...mapActions(['increment', 'decrement', 'incrementByTwo']),
 
     ...mapMutations(['reset']),
-    mutipleValue() {
-      this.$store.dispatch('mutipleValue')
+    mutipleValue(mutiple) {
+      this.$store.dispatch('mutipleValue', mutiple)
     }
   },
   created() {

@@ -31,7 +31,7 @@ const actions = {
     context.commit('incrementByTwo', value)
   },
   autoDecrement: ({commit}) => commit('autoDecrement'),
-  mutipleValue: ({commit}, payload) => commit('mutipleValue')
+  mutipleValue: ({commit}, payload) => commit('mutipleValue', payload)
 }
 
 const getters = {
